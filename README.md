@@ -1,1 +1,1 @@
-# ArtS-and-VasM
+# ArtS and VasM
