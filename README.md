@@ -13,14 +13,15 @@ Objective quantification of brain arteriolosclerosis remains an area of ongoing 
 
 Together, ArtS and VasM compose a prototype end-to-end ML-based pipeline that can assist neuropathologists in the morphometric analysis of arteriolosclerotic vessels on whole slide images. The ML component Arteriolosclerosis Segmentation (ArtS) receives WSIs as input and outputs segmentations of arteriolosclerotic blood vessel walls and lumens, which are in turn input into the non-ML component Vascular Morphometry (VasM) that outputs quantitative metrics for the sclerotic index, vessel wall thickness, and vessel wall to lumen area ratio.
 
-ArtS comprises four algorithms that complete four sequential steps (Figure 2). After WSI tiling, the first step (Phase 1a) is to detect blood vessels and keep tiles that contain a blood vessel and discard those that do not. The second step (Phase 1b) is to recursively shift tiles until the detected blood vessel appears at the center of the tile. The third step (Phase 1c) is to keep tiles that contain a blood vessel with arteriolosclerosis and discard those that do not. The fourth step (Phase 1d) is to segment the walls and lumens of blood vessels with arteriolosclerosis.
-
-### Figure Placeholder
-
-![Insert Figure Here](path/to/figure.png)
-
-Place any figure caption or descriptive text here. You can replace `path/to/figure.png` with the actual path or URL of your image.
-
 **Why use ArtS and VasM?**  
 
 > Objective quantification of brain arteriolosclerosis remains an area of ongoing refinement in neuropathology, with current methods primarily utilizing semi-quantitative scales completed through manual histological examination. These approaches offer modest inter-rater reliability and do not provide precise quantitative metrics. ArtS and VasM show promise as an assistive tool to enhance current neuropathological evaluation of brain arteriolosclerosis, offering potential for improved inter-rater reliability and quantification.
+
+## Algorithm Architecture  
+
+ArtS comprises four algorithms that complete four sequential steps (Figure 2). After WSI tiling, the first step (Phase 1a) is to detect blood vessels and keep tiles that contain a blood vessel and discard those that do not. The second step (Phase 1b) is to recursively shift tiles until the detected blood vessel appears at the center of the tile. The third step (Phase 1c) is to keep tiles that contain a blood vessel with arteriolosclerosis and discard those that do not. The fourth step (Phase 1d) is to segment the walls and lumens of blood vessels with arteriolosclerosis.
+
+![Insert Figure Here](Figures/Figure2_ArtS_overview.jpg)
+**Figure 2:** The ML pipeline received WSIs of H&E-stained cortical and/or periventricular white matter brain tissue as input. Each WSI was tiled into tens of thousands of (512 x 512) pixel image tiles. (Phase 1a) The blood vessel detection ML model sorted tiles into those with blood vessels and those without. (Phase 1b) Object of interest Recursive Centering Algorithm (ORCA) generated new tiles centered onto the detected blood vessels. (Phase 1c) An arteriolosclerosis classification model separated tiles with centered blood vessels into those with arteriolosclerosis and those without. (Phase 1d) A modified Attention U-Net segmented the arteriolosclerotic vessel walls and lumens to produce the final output. All models within ArtS take advantage of fixed ImageNet pretrained parameters from Google’s EfficientV2L to extract low-level features prior to learning vessel specific features de-novo. 
+
+
