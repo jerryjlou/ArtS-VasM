@@ -24,4 +24,6 @@ ArtS comprises four algorithms that complete four sequential steps (Figure 2). A
 ![Insert Figure Here](Figures/Figure2_ArtS_overview.jpg)
 **Figure 2:** The ML pipeline received WSIs of H&E-stained cortical and/or periventricular white matter brain tissue as input. Each WSI was tiled into tens of thousands of (512 x 512) pixel image tiles. (Phase 1a) The blood vessel detection ML model sorted tiles into those with blood vessels and those without. (Phase 1b) Object of interest Recursive Centering Algorithm (ORCA) generated new tiles centered onto the detected blood vessels. (Phase 1c) An arteriolosclerosis classification model separated tiles with centered blood vessels into those with arteriolosclerosis and those without. (Phase 1d) A modified Attention U-Net segmented the arteriolosclerotic vessel walls and lumens to produce the final output. All models within ArtS take advantage of fixed ImageNet pretrained parameters from Google’s EfficientV2L to extract low-level features prior to learning vessel specific features de-novo. 
 
+## Under Construction
+
 
