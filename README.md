@@ -55,7 +55,7 @@ ArtSeg comprises four algorithms that complete four sequential steps (Figure 2).
 **Figure 9: Example segmentation results for blood vessels with mild arteriolosclerosis as classified by a neuropathology fellow (JL) and annotated by non-experts (KN, HSW, JL)**
 Six example instances with input image, human annotation mask, model segmentation output, and an overlap image of input image and model segmentation are shown here. The blood vessels shown here were classified as having arteriolosclerosis by a human annotator. (a, b) Example instances of good model performance. (c, d) Example instances of intermediate model performance. (e, f) Example instances of poor model performance.
 
-![Insert Figure Here](Figures/ArtSeg.Moderate.Arteriolosclerosis.jpg)\
+![Insert Figure Here](Figures/ArtS.Moderate.Arteriolosclerosis.jpg)\
 **Figure 10: Example segmentation results for blood vessels with moderate arteriolosclerosis as classified by a neuropathology fellow (JL) and annotated by non-experts (KN, HSW, JL)**
 Six example instances with input image, human annotation mask, model segmentation output, and an overlap image of input image and model segmentation are shown here. The blood vessels shown here were classified as having arteriolosclerosis by a human annotator. (a, b) Example instances of good model performance. (c, d) Example instances of intermediate model performance. (e, f) Example instances of poor model performance.
 
