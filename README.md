@@ -8,7 +8,7 @@ Jerry J. Lou*, Peter Chang, Kiana D. Nava, Chanon Chantaduly, Hsin-Pei Wang, Wil
 
 *Published in Free Neuropathology on June 2, 2025*
 
-**[Publication](https://www.uni-muenster.de/Ejournals/index.php/fnp/article/view/6387)** | **[Download Models](https://zenodo.org/records/14955269?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjUyZDYxNDNiLThlM2YtNDk4Yi05ZWMwLTRmYWZlM2UzYzk0NCIsImRhdGEiOnt9LCJyYW5kb20iOiIwZWFmMTZiMTliOTFlYmFhY2Y1NDRhODVjZjZjZGZlNSJ9.zsZ-DW-_8-tBOc-6PK0XHYZOM7rOL6fG-evXOBE0IPMYVA8hdTGorCMkoWJR70xJMSI68F2fSv8COx5gt7K6ZA)** 
+**[Publication](https://www.uni-muenster.de/Ejournals/index.php/fnp/article/view/6387)** | **[Download Models](https://zenodo.org/records/14955269?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjUyZDYxNDNiLThlM2YtNDk4Yi05ZWMwLTRmYWZlM2UzYzk0NCIsImRhdGEiOnt9LCJyYW5kb20iOiIwZWFmMTZiMTliOTFlYmFhY2Y1NDRhODVjZjZjZGZlNSJ9.zsZ-DW-_8-tBOc-6PK0XHYZOM7rOL6fG-evXOBE0IPMYVA8hdTGorCMkoWJR70xJMSI68F2fSv8COx5gt7K6ZA)** | **[Cite](#reference)** 
 
 **Abstract**:\
 <img src="Figures/Blood_vessel_chip.png" width="300px" align="right" />
@@ -216,6 +216,6 @@ df.to_csv('#save_path.csv', index=False)
 ## License and Terms of Use
 The models and associated code are released under the CC BY-NC-ND 4.0 license and may only be used for non-commercial, academic research purposes with proper attribution. Any commercial use, sale, or other monetization of the ArtSegmodels and their derivatives, which include models trained on outputs from the ArtSegmodels or datasets created from the ArtSegmodels, is prohibited and requires prior approval. Any commercial use, sale, or other monetization of VasMorph is prohibited and requires prior approval. By downloading the models, you agree not to distribute, publish or reproduce a copy of the models. If another user within your organization wishes to use the ArtSegmodels, they must register as an individual user and agree to comply with the terms of use. Users may not attempt to re-identify the deidentified data used to develop the underlying models. If you are a commercial entity, please contact the corresponding authors.
 
-**How to Cite**:\
+## Reference
 Lou, J. J., Chang, P., Nava, K. D., Chantaduly, C., Wang, H.-P., Yong, W. H., Patel, V., Chaudhari, A. J., Vasquez, L. R., Monuki, E., Head, E., Vinters, H. V., Magaki, S., Harvey, D. J., Chuah, C.-N., DeCarli, C. S., Williams, C. K., Keiser, M., & Dugger, B. N. (2025). Applying machine learning to assist in the morphometric assessment of brain arteriolosclerosis through automation. Free Neuropathology, 6, 12. https://doi.org/10.17879/freeneuropathology-2025-6387
 
